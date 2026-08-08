@@ -1,5 +1,3 @@
-[English](README.md) · [中文说明](README_CN.md)
-
 # Flora Pastry & Coffee Shop Operations Control System
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
@@ -10,19 +8,10 @@
 
 > **No signup. No installation. Free.**
 >
-> 🌐 **Open in Browser** → `HTML live demo`
+> 🌐 **Open in Browser** → [HTML live demo]()
 >
-> 📥 **Download Excel** → `Excel version / release link`
+> 📥 **Download Excel** → [Excel version / purchase link]()
 
-## Screenshots
-
-<!-- screenshot: browser version -->
-
-**Browser version** — A lightweight operating view for monitoring sales, profitability, inventory warnings, cash position, and operational exceptions without installing software.
-
-<!-- screenshot: Excel version -->
-
-**Excel version** — The full workbook connects product recipes, ingredient and packaging costs, sales, inventory, purchasing, payroll, and finance into one operating model.
 
 ## What It Helps You Track
 
