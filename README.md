@@ -8,7 +8,7 @@
 
 > **No signup. No installation. Free.**
 >
-> 🌐 **Open in Browser** → [HTML live demo]()
+> 🌐 **Open in Browser** → [HTML live demo](https://hyvoid.github.io/Flora-Pastry-Coffee-Shop-Operating-Control-System/)
 >
 > 📥 **Download Excel** → [Excel version / purchase link]()
 
