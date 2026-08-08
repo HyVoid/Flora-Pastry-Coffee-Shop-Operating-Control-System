@@ -1,0 +1,6 @@
+{
+  "name": "Flora Pastry & Coffee Shop Operating Control System",
+  "description": "Comprehensive SaaS web application for Flora Pastry & Coffee Shop with real-time Excel calculation engine, inventory tracking, recipe BOM cost engine, and financial control dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

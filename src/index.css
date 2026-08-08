@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+:root {
+  /* ── Core Color System (Strict CSS variables) ── */
+  --color-primary: #051C2C;
+  --color-accent: #2251FF;
+  --color-bg: #F5F5F2;
+  --color-surface: #FFFFFF;
+  --color-muted: #888888;
+  --color-body-text: #1A1A2E;
+  --color-border: #E8E8E6;
+  --color-input-bg: #FFFDE7;
+
+  /* ── Semantic Colors (Action / Anomaly state only) ── */
+  --color-positive: #00C853;
+  --color-negative: #D32F2F;
+
+  /* ── Navigation & Table Chrome ── */
+  --nav-bg: #FFFFFF;
+  --nav-border: #E8E8E6;
+  --nav-text: #051C2C;
+  --nav-text-muted: rgba(5, 28, 44, 0.55);
+  --table-header-bg: rgba(5, 28, 44, 0.03);
+
+  /* ── Insight & Alert Backgrounds ── */
+  --insight-bg: rgba(5, 28, 44, 0.04);
+  --anomaly-bg: rgba(211, 47, 47, 0.05);
+
+  /* ── Typography Fonts ── */
+  --font-heading: 'EB Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 2px 8px rgba(5, 28, 44, 0.06), 0 1px 2px rgba(5, 28, 44, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(5, 28, 44, 0.10), 0 2px 4px rgba(5, 28, 44, 0.04);
+  --shadow-modal: 0 16px 48px rgba(5, 28, 44, 0.16);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body-text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Heading font class */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* KPI Display Tracking */
+.tracking-kpi {
+  letter-spacing: -0.025em;
+}
+
+/* Table Header Uppercase */
+.table-header-cell {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Editable input cell style */
+.cell-input {
+  background-color: var(--color-input-bg);
+  border: 1px solid rgba(5, 28, 44, 0.12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+  color: var(--color-primary);
+  transition: all 150ms ease;
+}
+
+.cell-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(34, 81, 255, 0.15);
+  background-color: #FFFFFF;
+}
+
+/* Insight box styling */
+.insight-box {
+  background-color: var(--insight-bg);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+}
+
+/* Card elevation and hover effect */
+.flora-card {
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.flora-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Clickable status cell interaction */
+.interactive-cell {
+  transition: transform 180ms ease, filter 180ms ease;
+  cursor: pointer;
+}
+
+.interactive-cell:hover {
+  transform: scale(1.04);
+  filter: brightness(0.96);
+}
+
+/* Animation fadeUp */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 220ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Inline data bar track & fill */
+.data-bar-track {
+  background-color: rgba(34, 81, 255, 0.1);
+  border-radius: 4px;
+  height: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.data-bar-fill {
+  background-color: var(--color-accent);
+  height: 100%;
+  border-radius: 4px;
+  transition: width 300ms ease;
+}
