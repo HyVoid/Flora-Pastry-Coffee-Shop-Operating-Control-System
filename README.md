@@ -6,7 +6,9 @@
 
 **Track sales, product profitability, inventory exposure, labor cost, cash flow, and data integrity in one lightweight operating workbook — free in the browser, with an Excel version for deeper control.**
 
-> **No signup. No installation. Free.**
+**No signup. No installation. Free in your browser.**
+
+Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
 >
 > 🌐 **Open in Browser** → [HTML live demo](https://hyvoid.github.io/Flora-Pastry-Coffee-Shop-Operating-Control-System/)
 >
